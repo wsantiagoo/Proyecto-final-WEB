@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColombiaCar - Reservaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">ColombiaCar</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="register.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="reservations" style="background-image: url('https://files.lafm.com.co/assets/public/styles/4x3/public/2019-07/renta-de-carros_0.jpg?VersionId=7mLn1kz838ps03VB3MNqmEolWcl_9Hki&itok=0Ur8-OR0');">
+        <div class="form-container">
+            <h1 style="color: white;" >Mis Reservas</h1>
+            
+            <p style="color: white;" >No hay reservas actualmente.</p>
+        </div>
+        <div class="form-container">
+            <h1 style="color: white;" >Nueva Reserva</h1>
+            <form id="searchForm">
+                <label for="carType" style="color: white;" >Tipo de Auto:</label>
+                <select id="carType" name="carType">
+                    <option value="sedan">Sedán</option>
+                    <option value="suv">SUV</option>
+                </select>
+                
+                <label for="transmissionType" style="color: white;" >Tipo de Transmisión:</label>
+                <select id="transmissionType" name="transmissionType">
+                    <option value="automatic">Automática</option>
+                    <option value="manual">Manual</option>
+                </select>
+                
+                <label for="fuelType" style="color: white;" >Tipo de Combustible:</label>
+                <select id="fuelType" name="fuelType">
+                    <option value="gasoline">Gasolina</option>
+                    <option value="gas">Gas</option>
+                    <option value="hybrid">Híbrido</option>
+                    <option value="electric">Eléctrico</option>
+                </select>
+                
+                <label for="model" style="color: white;" >Modelo:</label>
+                <input type="text" id="model" name="model">
+                
+                <label for="brand" style="color: white;" >Marca:</label>
+                <input type="text" id="brand" name="brand">
+                
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="availableCars"></div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
